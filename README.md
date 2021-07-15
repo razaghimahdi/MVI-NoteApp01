@@ -45,7 +45,7 @@ Every use case has a StateEvent pass to it,because the stateEvent falls away pas
 
 
 
-### **2)StateEvent**: 
+### **3)StateEvent**: 
 
 ```kotlin
     class InsertNewNoteEvent(
@@ -76,7 +76,7 @@ interface StateEvent {/**this interface has some properties which every StateEve
    ```
     
     
-### **2)ViewState**: 
+### **4)ViewState**: 
 
 ```kotlin
     /**viewState defines every variable that can be used in that View(fragment)*/
