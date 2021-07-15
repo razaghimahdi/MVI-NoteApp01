@@ -25,30 +25,30 @@ class InsertNewNote(
     fun insertNewNote(
         id: String? = null,
         title: String,
+        body: String,
         stateEvent: StateEvent
     ): Flow<DataState<NoteListViewState>?> = flow {
 
         val newNote = noteFactory.createSingleNote(
             id = id ?: UUID.randomUUID().toString(),
             title = title,
-            body = ""
+            body = body
         )
         val cacheResult = safeCacheCall(IO){
             noteCacheDataSource.insertNote(newNote)
         }
 
-        val cacheResponse = object :  CacheResponseHandler<NoteListViewState, Long>(
+        val cacheResponse = object: CacheResponseHandler<NoteListViewState, Long>(
             response = cacheResult,
-            stateEvent=stateEvent
-        ) {
+            stateEvent = stateEvent
+        ){
             override suspend fun handleSuccess(resultObj: Long): DataState<NoteListViewState>? {
-
-              return  if(resultObj > 0){
+                return if(resultObj > 0){
                     val viewState =
                         NoteListViewState(
                             newNote = newNote
                         )
-                   DataState.data(
+                    DataState.data(
                         response = Response(
                             message = INSERT_NOTE_SUCCESS,
                             uiComponentType = UIComponentType.Toast(),
@@ -69,7 +69,6 @@ class InsertNewNote(
                         stateEvent = stateEvent
                     )
                 }
-
             }
         }.getResult()
 

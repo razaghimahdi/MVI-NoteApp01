@@ -4,10 +4,21 @@
 #### What are these Use Cases/interactors supposed to do?
 
 #### Do We really need  Use Cases?
-Answer is in my source
+Answer is in my source.
 
 
-<img src="screenshots/clean_architecture_diagrams.png" width="300">
+### What we have in this project?
+#### MVI
+#### Use-Case
+#### JUnit-Test for every single use-case
+#### LiveData and Flow
+#### Navigation component
+#### Dependency Injection
+#### Retrofit
+#### Caching Data
+
+
+<img src="screenshots/clean_architecture_diagrams.png" width="650">
 
 **Presentation**: Responsible for showing information to the user and interpreting user commands;
 **Application**: Defines the jobs the software is supposed to do by orchestrating the data flow from and to the domain models;

@@ -8,18 +8,19 @@ import com.example.mvi_noteapp.business.domain.state.StateMessage
 sealed class NoteListStateEvent: StateEvent {
 
     class InsertNewNoteEvent(
-        val title: String
+        val title: String,
+        val body: String
     ): NoteListStateEvent() {
 
         override fun errorInfo(): String {
             return "Error inserting new note."
         }
 
-        override fun eventName(): String {/**we can manage State-Event by eventName*/
+        override fun eventName(): String {
             return "InsertNewNoteEvent"
         }
 
-        override fun shouldDisplayProgressBar() = true/**in some cases we maybe need to show progressBar*/
+        override fun shouldDisplayProgressBar() = true
     }
 
     // for testing
