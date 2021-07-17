@@ -1,7 +1,7 @@
 package com.example.mvi_noteapp.framework.datasource.cache.abstraction
 
 import com.example.mvi_noteapp.business.domain.model.Note
-import com.example.mvi_noteapp.framework.datasource.database.NOTE_PAGINATION_PAGE_SIZE
+import com.example.mvi_noteapp.framework.datasource.cache.database.NOTE_PAGINATION_PAGE_SIZE
 
 
 interface NoteDaoService {

@@ -4,9 +4,8 @@ import com.example.mvi_noteapp.business.data.cache.abstraction.NoteCacheDataSour
 import com.example.mvi_noteapp.business.data.network.abstraction.NoteNetworkDataSource
 import com.example.mvi_noteapp.business.domain.model.Note
 import com.example.mvi_noteapp.business.domain.model.NoteFactory
-import com.example.mvi_noteapp.business.domain.util.DateUtil
 import com.example.mvi_noteapp.di.DependencyContainer
-import com.example.mvi_noteapp.framework.datasource.database.ORDER_BY_ASC_DATE_UPDATED
+import com.example.mvi_noteapp.framework.datasource.cache.database.ORDER_BY_ASC_DATE_UPDATED
 import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Assertions.assertEquals

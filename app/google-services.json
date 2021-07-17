@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "815087492172",
+    "project_id": "mvi-note-app-01",
+    "storage_bucket": "mvi-note-app-01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815087492172:android:de37df210df2c4ef6be8e9",
+        "android_client_info": {
+          "package_name": "com.example.mvi_noteapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815087492172-fm9vfrsa93onh1i0dbf9ps180n0i9nvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ9yaXAgfREWvuYIZo0G37XAvPWbAHylI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815087492172-fm9vfrsa93onh1i0dbf9ps180n0i9nvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

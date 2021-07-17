@@ -1,5 +1,6 @@
 ## MVI Note App
 ### Developed by Mahdi Razzaghi Ghaleh
+thanks to codingwithmitch 
 
 #### What are these Use Cases/interactors supposed to do?
 
@@ -14,7 +15,7 @@ Answer is in my source.
 #### LiveData and Flow
 #### Navigation component
 #### Dependency Injection
-#### Retrofit
+#### Firestore
 #### Caching Data
 
 

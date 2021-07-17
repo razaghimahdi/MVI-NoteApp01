@@ -7,7 +7,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class NoteCacheDataSourceImpl
+class NoteCacheDataSourceImpl/**by dagger, this class going to pass to NoteDaoServiceImpl*/
 @Inject
 constructor(
     private val noteDaoService: NoteDaoService

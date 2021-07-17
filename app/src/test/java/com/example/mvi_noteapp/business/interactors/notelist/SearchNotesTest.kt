@@ -10,7 +10,7 @@ import com.example.mvi_noteapp.business.domain.state.DataState
 import com.example.mvi_noteapp.business.interactors.notelist.SearchNotes.Companion.SEARCH_NOTES_NO_MATCHING_RESULTS
 import com.example.mvi_noteapp.business.interactors.notelist.SearchNotes.Companion.SEARCH_NOTES_SUCCESS
 import com.example.mvi_noteapp.di.DependencyContainer
-import com.example.mvi_noteapp.framework.datasource.database.ORDER_BY_ASC_DATE_UPDATED
+import com.example.mvi_noteapp.framework.datasource.cache.database.ORDER_BY_ASC_DATE_UPDATED
 import com.example.mvi_noteapp.framework.presentation.notelist.state.NoteListStateEvent
 import com.example.mvi_noteapp.framework.presentation.notelist.state.NoteListViewState
 import kotlinx.coroutines.InternalCoroutinesApi

@@ -3,7 +3,7 @@ package com.example.mvi_noteapp.business.data.cache
 import com.example.mvi_noteapp.business.data.cache.abstraction.NoteCacheDataSource
 import com.example.mvi_noteapp.business.domain.model.Note
 import com.example.mvi_noteapp.business.domain.util.DateUtil
-import com.example.mvi_noteapp.framework.datasource.database.NOTE_PAGINATION_PAGE_SIZE
+import com.example.mvi_noteapp.framework.datasource.cache.database.NOTE_PAGINATION_PAGE_SIZE
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
 
