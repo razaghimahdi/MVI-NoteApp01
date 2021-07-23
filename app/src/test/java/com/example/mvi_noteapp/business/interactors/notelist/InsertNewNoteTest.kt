@@ -57,8 +57,7 @@ class InsertNewNoteTest {
         insertNewNote.insertNewNote(
             id = newNote.id,
             title = newNote.title,
-            body = newNote.body,
-            stateEvent = NoteListStateEvent.InsertNewNoteEvent(newNote.title, newNote.body)
+            stateEvent = NoteListStateEvent.InsertNewNoteEvent(newNote.title)
         ).collect(object: FlowCollector<DataState<NoteListViewState>?>{
             override suspend fun emit(value: DataState<NoteListViewState>?) {
                 assertEquals(
@@ -89,8 +88,7 @@ class InsertNewNoteTest {
         insertNewNote.insertNewNote(
             id = newNote.id,
             title = newNote.title,
-            body = newNote.body,
-            stateEvent = NoteListStateEvent.InsertNewNoteEvent(newNote.title, newNote.body)
+            stateEvent = NoteListStateEvent.InsertNewNoteEvent(newNote.title)
         ).collect(object: FlowCollector<DataState<NoteListViewState>?>{
             override suspend fun emit(value: DataState<NoteListViewState>?) {
                 assertEquals(
@@ -121,8 +119,7 @@ class InsertNewNoteTest {
         insertNewNote.insertNewNote(
             id = newNote.id,
             title = newNote.title,
-            body = newNote.body,
-            stateEvent = NoteListStateEvent.InsertNewNoteEvent(newNote.title, newNote.body)
+            stateEvent = NoteListStateEvent.InsertNewNoteEvent(newNote.title)
         ).collect(object: FlowCollector<DataState<NoteListViewState>?>{
             override suspend fun emit(value: DataState<NoteListViewState>?) {
                 assert(

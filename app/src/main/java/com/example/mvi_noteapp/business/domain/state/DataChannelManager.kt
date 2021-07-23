@@ -63,7 +63,7 @@ abstract class DataChannelManager<ViewState> {
     ){
         if(canExecuteNewStateEvent(stateEvent)){
             printLogD("DCM", "launching job: ${stateEvent.eventName()}")
-            addStateEvent(stateEvent)
+            addStateEvent(stateEvent)/**this is how we know which stateEvent is active*/
             jobFunction
                 .onEach { dataState ->
                     dataState?.let { dState ->

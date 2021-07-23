@@ -1,6 +1,7 @@
 package com.example.mvi_noteapp.framework.datasource.cache.mappers
 
 import com.example.mvi_noteapp.business.domain.model.Note
+import com.example.mvi_noteapp.business.domain.util.DateUtil
 import com.example.mvi_noteapp.business.domain.util.EntityMapper
 import com.example.mvi_noteapp.framework.datasource.cache.model.NoteCacheEntity
 import javax.inject.Inject
@@ -9,7 +10,9 @@ import javax.inject.Singleton
 @Singleton
 class CacheMapper
 @Inject
-constructor(): EntityMapper<NoteCacheEntity, Note> {
+constructor(
+    private val dateUtil: DateUtil
+    ): EntityMapper<NoteCacheEntity, Note> {
 
     fun entityListToNoteList(entities:List<NoteCacheEntity>):List<Note>{
         val list :ArrayList<Note> =ArrayList()

@@ -1,11 +1,11 @@
 ## MVI Note App
 ### Developed by Mahdi Razzaghi Ghaleh
-thanks to codingwithmitch 
+##### **thanks to codingwithmitch**
 
 #### What are these Use Cases/interactors supposed to do?
 
 #### Do We really need  Use Cases?
-Answer is in my source.
+Answer is in my source.(check links at bottom)
 
 
 ### What we have in this project?
@@ -101,6 +101,6 @@ data class NoteListViewState(
 
 ### Some Ideas:
 Reference: https://medium.com/@douglas.iacovelli/how-to-handle-errors-with-retrofit-and-coroutines-33e7492a912
-
-
+https://proandroiddev.com/why-you-need-use-cases-interactors-142e8a6fe576
+https://proandroiddev.com/kotlin-clean-architecture-1ad42fcd97fa
 
